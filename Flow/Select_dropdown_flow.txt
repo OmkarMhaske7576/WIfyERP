@@ -1,0 +1,9 @@
+select functionality : in widgetConfiguration.jsp
+
+Iterate CompositeOption
+	Iterate Option
+		check if option.type == "select"
+					1. get option.select
+					2. split by "," >> list
+					3. iterate list and prepare select tag option, compare each list element with option.assign_value
+						if true, mark it as select
